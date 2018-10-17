@@ -9,7 +9,8 @@
     "mongoose": "^5.3.3"
   },
   "scripts": {
-    "test": "nodemon --exec 'mocha --recursive -R min'"
+    "test": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'",
+    "server": "nodemon index.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
