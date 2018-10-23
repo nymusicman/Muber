@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 if(process.env.NODE_ENV !== 'test'){
-    mongoose.connect('mongodb://localhost/muber', { useNewUrlParser: true });
+    mongoose.connect('mongodb://localhost/muber', { useNewUrlParser: true, useFindAndModify: false });
 }
 
 app.use(bodyParser.json());
